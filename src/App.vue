@@ -128,6 +128,9 @@ const confirmEdit = () => {
 * {
   box-sizing: border-box;
 }
+#app {
+  display: block;
+}
 .table {
   margin: 0 auto;
   width: 900px;
@@ -160,5 +163,12 @@ const confirmEdit = () => {
 .edit-txt input {
   display: block;
   margin: 5px 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: max(3.5vw, 50px);
+    place-items: unset;
+  }
 }
 </style>
